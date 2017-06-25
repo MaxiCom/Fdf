@@ -5,3 +5,8 @@
 # Screenshot 
 
 ![Alt text](/screenshot/screenshot.png?raw=true "A simple map")
+
+# Requierements
+
+		-python2.7
+		-pygame
