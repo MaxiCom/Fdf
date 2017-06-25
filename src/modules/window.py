@@ -2,7 +2,7 @@ from pygame.locals import *
 import pygame
 
 X_START = 400
-Y_START = 20
+Y_START = 100
 
 TILE_WIDTH = 40
 TILE_HEIGHT = 25
