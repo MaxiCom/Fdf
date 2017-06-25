@@ -8,7 +8,7 @@ def main():
 	if len(sys.argv) == 2:
 		core.loadMap(sys.argv[1])	
 	else:
-		print '\033[31mUsage: ./displayer.py valid_map\033[m'
+		print '\033[31mUsage: ./fdf.py valid_map\033[m'
 
 if __name__ == '__main__':
 	main()
