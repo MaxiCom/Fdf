@@ -8,5 +8,5 @@
 
 # Requierements
 
-		-python2.7
-		-pygame
+	-python2.7
+	-pygame
