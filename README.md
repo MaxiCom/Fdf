@@ -4,4 +4,4 @@
 
 # Screenshot 
 
-![Alt text](/screenshot/screenshot.png?raw=true "A simple question")
+![Alt text](/screenshot/screenshot.png?raw=true "A simple map")
