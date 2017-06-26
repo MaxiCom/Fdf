@@ -1,6 +1,12 @@
 from pygame.locals import *
 import pygame
 
+BLACK = (  0,   0,   0)
+WHITE = (255, 255, 255)
+BLUE =  (  0,   0, 255)
+GREEN = (  0, 255,   0)
+RED =   (255,   0,   0)
+
 X_START = 400
 Y_START = 100
 
@@ -15,19 +21,19 @@ class Window:
 					x_point = (i2 - i1) * (TILE_WIDTH / 2) + X_START + int(x)
 					y_point = (i2 + i1) * (TILE_HEIGHT / 2) + Y_START - int(x)
 
-					pygame.draw.circle(self._display_surf, (0, 255, 0), (x_point, y_point), 1)
+					pygame.draw.circle(self._display_surf, GREEN, (x_point, y_point), 1)
 					
 					if i2 < len(y) - 1:
 						x_next_point = (i2 - i1 + 1) * (TILE_WIDTH / 2) + X_START + int(map[i1][i2 + 1])
 						y_next_point = (i2 + i1 + 1) * (TILE_HEIGHT / 2) + Y_START - int(map[i1][i2 + 1])
 						
-						pygame.draw.line(self._display_surf, (0, 255, 0), (x_point, y_point), (x_next_point, y_next_point))
+						pygame.draw.aaline(self._display_surf, GREEN, (x_point, y_point), (x_next_point, y_next_point))
 					
 					if i1 < len(map) - 1:
 						x_next_point = (i2 - i1 - 1) * (TILE_WIDTH / 2) + X_START + int(map[i1 + 1][i2])
 						y_next_point = (i2 + i1 + 1) * (TILE_HEIGHT / 2) + Y_START - int(map[i1 + 1][i2])
 							
-						pygame.draw.line(self._display_surf, (0, 255, 0), (x_point, y_point), (x_next_point, y_next_point))
+						pygame.draw.aaline(self._display_surf, GREEN, (x_point, y_point), (x_next_point, y_next_point))
 
 		except Exception as e:
 			print '\033[31m%s\033[m' % (e)
